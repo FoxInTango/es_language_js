@@ -141,9 +141,9 @@ Error js_document::load_token(String& token, String& content, Index& index){
     return 0;
 }
 
-ASTElement* js_document::load_element(String& token, String& content, Index& index,ASTElement* supper,const es_element_type& type){
+ASTElement* js_document::load_element(String& token, String& content, Index& index,ASTElement* supper,const ASTElementType& type){
     switch(type){
-    case es_element_function:{
+    case ASTElementType_VOID :{
         ASTFunction* e = new ASTFunction();
         if(supper){
             supper->appendSubelement(e);

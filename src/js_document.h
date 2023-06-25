@@ -36,7 +36,7 @@ public:
 public:
     Error load(const char* path);
     Error load_token(String& token,String& content,Index& index);
-    ASTElement* load_element(String& token, String& content, Index& index,ASTElement* super,const es_element_type& type);
+    ASTElement* load_element(String& token, String& content, Index& index,ASTElement* super,const ASTElementType& type);
 };
 namespaceEnd
 EXTERN_C_END
