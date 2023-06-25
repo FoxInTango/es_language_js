@@ -38,7 +38,7 @@ namespaceBegin(foxintango)
 js_element::js_element(){}
 js_element::~js_element(){}
 
-virtual Error js_element::execute(const ASTContext* context, const ASTElement* caller){
+Error js_element::execute(const ASTContext* context, const ASTElement* caller){
     return 1;
 }
 namespaceEnd
