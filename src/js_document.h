@@ -31,8 +31,8 @@ namespaceBegin(foxintango)
 
 class foxintangoAPI js_document :ASTDocument{
 public:
-    js_document(const ASTContext* context);
-    js_document(const ASTContext* context, const URL& url);
+    js_document(ASTContext* context);
+    js_document(ASTContext* context, const URL& url);
 public:
     Error load(const URL& url);
     Error load_token(String& token,String& content,Index& index);
