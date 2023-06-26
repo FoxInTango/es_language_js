@@ -34,7 +34,7 @@ public:
     js_document();
    ~js_document();
 public:
-    Error load(const char* path);
+    Error load(const URL& url);
     Error load_token(String& token,String& content,Index& index);
     ASTElement* load_element(String& token, String& content, Index& index,ASTElement* super,const ASTElementType& type);
 };

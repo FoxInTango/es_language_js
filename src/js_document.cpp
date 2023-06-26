@@ -118,7 +118,7 @@ Error es_document::load(const char* path) {
 }
 */
 
-Error js_document::load(const char* path){
+Error js_document::load(const URL& url){
     String token;
     String content;
     Index  index = 0;
@@ -127,6 +127,8 @@ Error js_document::load(const char* path){
         load_token(token,content,index);
         if(token == es_token_keyword_break){
             ASTBreak* e = new ASTBreak();
+
+            load_element(token,content,index,0,0);
         }
     }
 

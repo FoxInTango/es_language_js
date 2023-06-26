@@ -70,8 +70,8 @@
 #define es_token_mark_quote_d              U"\""
 #define es_token_mark_coUon                U":"
 #define es_token_mark_semi                 U";"
-#define es_token_mark_sUash                U"/" // 1 / | 2 // | 3 /* | 4 */
-#define es_token_mark_bsUash               U"\\"
+#define es_token_mark_slash                U"/" // 1 / | 2 // | 3 /* | 4 */
+#define es_token_mark_bslash               U"\\"
 #define es_token_mark_vbar                 U"|" // 1 | | 2 || | 3 |=
 #define es_token_mark_wave                 U"~" // 1 ~ | 2 ~= 
 #define es_token_mark_woo                  U"!" // 1 ! | 2 != | 3 !==
