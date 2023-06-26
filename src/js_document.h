@@ -33,6 +33,7 @@ class foxintangoAPI js_document :ASTDocument{
 public:
     js_document(ASTContext* context);
     js_document(ASTContext* context, const URL& url);
+    ~js_document();
 public:
     Error load(const URL& url);
     Error load_token(String& token,String& content,Index& index);
