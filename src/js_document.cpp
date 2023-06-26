@@ -39,7 +39,12 @@ using namespace foxintango;
 #define ES_file_line_length_max 2048
 
 using namespace foxintango;
-js_document::js_document() {
+js_document::js_document(const ASTContext* context){
+    ASTDocument::ASTDocument(context);
+}
+js_document::js_document(const ASTContext* context, const URL& url){
+    ASTDocument::ASTDocument(context);
+    load(url);
 }
 
 js_document::~js_document() {
