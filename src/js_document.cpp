@@ -43,7 +43,7 @@ js_document::js_document(ASTContext* context){
     ASTDocument::ASTDocument(context);
 }
 js_document::js_document(ASTContext* context, const URL& url){
-    ASTDocument::ASTDocument(context);
+    ASTDocument::ASTDocument(context,url);
     load(url);
 }
 
