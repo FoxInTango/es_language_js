@@ -10,10 +10,10 @@ bool es_language_js_module_Interface::containClass(const char* name){
     if(String("js_document") == name) return true;
 }
 void* es_language_js_module_Interface::createObject(const char* name, const Model& model){
-    ModelElement* e = model["context"];
-    ASTContext* context = 0;
-    if(e) e->as(&context);
     if(String("js_document") == name){
+        ModelElement* e = model["context"];
+        ASTContext* context = 0;
+        if (e) e->as(&context);
         return new js_document(context);
     }
 
@@ -25,7 +25,7 @@ bool es_language_js_module_Interface::containVariable(const char* name) {
 
 void* es_language_js_module_Interface::exportVariable(const char* name) {
     AST_EXPORT(ast_map);
-    return 0;
+    return &ast_symbols;
 }
 
 es_language_js_module_Interface foxintangoAPI MODULE_INTERFACE_INSTANCE;
