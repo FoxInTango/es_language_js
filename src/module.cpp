@@ -10,7 +10,8 @@ bool es_language_js_module_Interface::containClass(const char* name){
     if(String("js_document") == name) return true;
 }
 void* es_language_js_module_Interface::createObject(const char* name, const Model& model){
-    if(String("js_document") == name) return new js_document();
+    ASTContext* context = static_cast<ASTContext*>(model.operator["context"]);
+    if(String("js_document") == name) return new js_document(context);
 
     return 0;
 }
