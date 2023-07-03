@@ -1,8 +1,8 @@
+#include "js_operators.h"
 #include <libast/libast.h>
 #include <libmodule/libmodule.h>
 #include <libcpp/libcpp.h>
 using namespace foxintango;
-AST_SYMBOL(ast_map);
 class foxintangoAPI es_language_js_module_Interface :public ModuleInterface {
 public:
     es_language_js_module_Interface();
