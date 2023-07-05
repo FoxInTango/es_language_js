@@ -148,7 +148,19 @@ Error js_document::load_token(String& token, String& content, Index& index){
 
 ASTElement* js_document::load_element(String& token, String& content, Index& index,ASTElement* supper,const ASTElementType& type){
     switch(type){
-    case ASTElementType_VOID :{
+    case ASTElementType_Operator: {
+        ASTFunction* e = new ASTFunction();
+        if (supper) {
+            supper->appendSubelement(e);
+        }
+    }break;
+    case ASTElementType_Expression: {
+        ASTFunction* e = new ASTFunction();
+        if (supper) {
+            supper->appendSubelement(e);
+        }
+    }break;
+    case ASTElementType_Function :{
         ASTFunction* e = new ASTFunction();
         if(supper){
             supper->appendSubelement(e);
