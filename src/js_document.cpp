@@ -139,7 +139,7 @@ Error js_document::load(const URL& url){
 }
 Error js_document::load_token(String& token, String& content, Index& index){
     while(content[index] == es_token_mark_space[0]) index ++;
-    while(content[index] != es_token_mark_space[0]){
+    while(content[index] != es_token_mark_space[0] && !is_mark(content[index])){
         token += content[index];
         index ++;
     }

@@ -24,6 +24,8 @@
 #ifndef _js_token_h_
 #define _js_token_h_
 
+#include <libcpp/libcpp.h>
+
 /**
  * TOKEN -- 连续的符号
  *       -- 连续的数字
@@ -333,6 +335,7 @@ unsigned int lineIndex;
 unsigned int charIndex;
 }es_token;
 
+foxintango::Unicode is_mark(const foxintango::Unicode& code);
 /*
 class es_token_array{
 public:
