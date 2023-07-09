@@ -32,6 +32,8 @@
 EXTERN_C_BEGIN
 namespaceBegin(foxintango)
 
+AST_CLASS(JS_OPERATOR);
+
 class foxintangoAPI js_element :public ASTElement{
 public:
     js_element();
