@@ -45,8 +45,7 @@ public:
  */
 class foxintangoAPI js_undefined :public js_element{};
 class foxintangoAPI js_null :public js_element{};
-
-class 
+ 
 namespaceEnd
 EXTERN_C_END
 #endif
