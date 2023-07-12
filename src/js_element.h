@@ -41,6 +41,12 @@ public:
 public:
     virtual Error execute(const ASTContext* context, const ASTElement* caller);
 };
+/** TODO : 赋值与引用
+ */
+class foxintangoAPI js_undefined :public js_element{};
+class foxintangoAPI js_null :public js_element{};
+
+class 
 namespaceEnd
 EXTERN_C_END
 #endif
