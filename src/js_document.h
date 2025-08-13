@@ -26,6 +26,8 @@
 #include "js_element.h"
 #include <libast/libast.h>
 #include <libcpp/libcpp.h>
+#include <map>
+#include <vector>
 EXTERN_C_BEGIN
 namespaceBegin(foxintango)
 
@@ -39,7 +41,7 @@ public:
     Error load(const URL& url);
     Error load_token(String& token,String& content,Index& index);
     ASTElement* load_element(String& token, String& content, Index& index,ASTElement* super,const ASTElementType& type);
-    JS_DOCUMENT_ERROR loadFunction(es_context* es,Array<es_token> tokens,Index index);
+    JS_DOCUMENT_ERROR loadFunction(es_context* es,std::vector<es_token> tokens,Index index);
     JS_DOCUMENT_ERROR loadClass();
     JS_DOCUMENT_ERROR loadOperator();
     JS_DOCUMENT_ERROR loadIfScope();

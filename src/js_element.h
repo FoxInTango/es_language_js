@@ -26,6 +26,7 @@
 #include <libes/libes.h>
 #include <libast/libast.h>
 #include <libcpp/libcpp.h>
+#include "js_token.h"
 /**
  * 
  */

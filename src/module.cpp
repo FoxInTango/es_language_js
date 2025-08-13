@@ -1,7 +1,8 @@
 #include "module.h"
 #include "js_document.h"
-
-Array<ASTElementInterface*> AST_MODULE_SYMBOLS;
+#include <map>
+#include <vector>
+std::vector<ASTElementInterface*> AST_MODULE_SYMBOLS;
 
 es_language_js_module_Interface::es_language_js_module_Interface(){}
 es_language_js_module_Interface::~es_language_js_module_Interface(){}
